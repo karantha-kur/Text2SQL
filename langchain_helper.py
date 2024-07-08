@@ -21,7 +21,6 @@ db_password = '<PASSWORD>'
 db_host = 'localhost'
 db_name = '<DB_NAME>'
 
-
 class CustomHuggingFaceEmbeddings(HuggingFaceEmbeddings):
     def _init_(self, model_name: str = 'sentence-transformers/all-MiniLM-L6-v2'):
         self.model_name = model_name
