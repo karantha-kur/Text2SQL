@@ -1,6 +1,9 @@
 # Text2SQL
 As the name suggests this is a Text-to-SQL chatbot which users can now clone and operate on their own local systems, utilizing MySQL Server and Gogle Gemini API Key.
 
+
+
+
    <img width="614" align = "center" alt="text2sql logo" src="https://github.com/karantha-kur/Text2SQL/assets/80699988/01ab0d4a-e3c5-45d5-bbdd-4516b2b80f9b">
 
 
