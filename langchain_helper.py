@@ -16,10 +16,10 @@ from few_shots import few_shots
 
 import os
 #connecting to the MySQL server, you can make use of [SELECT CURRENT_USER() FROM <TABLE_NAME>;] to find the db_user and db_host 
-db_user = 'root'
-db_password = 'karan2610'
+db_user = '<USER_NAME>'
+db_password = '<PASSWORD>'
 db_host = 'localhost'
-db_name = 'Uber_Data'
+db_name = '<DB_NAME>'
 
 
 class CustomHuggingFaceEmbeddings(HuggingFaceEmbeddings):
@@ -45,7 +45,7 @@ def get_few_shot_db_chain():
                               sample_rows_in_table_info=3)
     #the google_api_key is the api key from your gemini web app
     llm = GoogleGenerativeAI(model = 'models/text-bison-001', 
-                         google_api_key = 'AIzaSyA_SGNaNsN_N6kHDWpTNJ6Jc_OfYE8MRDI', 
+                         google_api_key = '<GOOGLE_API_KEY>', 
                          temperature = 0)
 
     embeddings = HuggingFaceEmbeddings(model_name = 'sentence-transformers/all-MiniLM-L6-v2')
